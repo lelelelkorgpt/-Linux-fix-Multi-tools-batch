@@ -48,6 +48,10 @@ choice1() {
 }
 
 internetOK() {
+    fi
+}
+
+internetOK() {
     clear
     echo "Internet connection: OK"
     sleep 3
@@ -162,8 +166,8 @@ choice7() {
     read -p "Choose an option: " powerChoice
 
     case "$powerChoice" in
-        1) sudo reboot ;;
-        2) sudo poweroff ;;
+        1) reboot ;;
+        2) poweroff ;;
     esac
     start
 }
